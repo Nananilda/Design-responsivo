@@ -1,17 +1,17 @@
-body{
+body {
     background-color: rgb(251, 241, 255);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    color: #222;
+    color: #000000;
 }
 
-header{
+header {
     background-color: rgb(96, 43, 112);
     color: white;
     padding: 20px;
 }
 
-header nav{
+header nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -19,72 +19,72 @@ header nav{
     gap: 15px;
 }
 
-header h1{
+header h1 {
     flex-basis: 100%;
     text-align: center;
     font-size: 28px;
     margin-bottom: 10px;
 }
 
-header a{
+header a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
 }
 
-header a:hover{
+header a:hover {
     background-color: white;
     color: rgb(96, 43, 112);
 }
 
-main{
+main {
     padding: 30px;
 }
 
-h2, h3{
+h2, h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(66, 28, 78);
     text-align: center;
 }
 
 
-.oqe{
+.oqe {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 40px;
 }
 
-.funcoes{
+.funcoes {
     text-align: center;
 }
 
-.funcoes-conteudo{
+.funcoes-conteudo {
     width: 80%;
     margin: 0 auto;
     text-align: left;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
     margin-bottom: 40px;
 }
 
-.controle h2{
+.controle h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.controle-grid{
+.controle-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
-table{
+table {
     width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
@@ -92,34 +92,211 @@ table{
     border-radius: 8px;
 }
 
-th, td{
+th, td {
     padding: 12px 15px;
     text-align: center;
     border: 1px solid #000000;
 }
 
-th{
+th {
     background-color: rgb(96, 43, 112);
     color: white;
 }
 
-.img{
+.img {
     display: block;
     margin: 30px auto;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.imp{
+.imp {
     margin: 40px auto;
     width: 80%;
 }
 
-footer{
+footer {
     background-color: rgb(96, 43, 112);
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
     font-size: 14px;
+}
+
+/* Media query 768 px*/
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(53, 53, 53);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        color: #ffffff;
+    }
+
+    header {
+        background-color: rgb(141, 26, 175);
+        color: rgb(0, 0, 0);
+        padding: 20px;
+    }
+
+    h1 {
+        color: #ffffff;
+    }
+
+    .oqe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    table {
+        width: 90%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: #fff;
+        border-radius: 8px;
+        color: #000000;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+        border: 1px solid #902495;
+        color: #000000;
+    }
+
+    th {
+        background-color: rgb(161, 73, 187);
+        color: rgb(0, 0, 0);
+    }
+
+    .img {
+        display: block;
+        margin: 5px auto;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .imp {
+        margin: 5px auto;
+        width: 80%;
+    }
+
+    footer {
+        background-color: rgb(96, 43, 112);
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    h2, h3 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(242, 214, 250);
+        text-align: center;
+    }
+}
+
+/* Media query 425 px*/
+@media (max-width: 431px) {
+    body {
+        background-color: rgb(53, 53, 53);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        color: #ffffff;
+    }
+
+    header {
+        background-color: rgb(141, 26, 175);
+        color: rgb(0, 0, 0);
+        padding: 20px;
+    }
+
+    h1 {
+        color: #ffffff;
+    }
+
+    .oqe {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    table {
+        width: 90%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: #fff;
+        border-radius: 8px;
+        color: #000000;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+        border: 1px solid #902495;
+        color: #000000;
+    }
+
+    th {
+        background-color: rgb(161, 73, 187);
+        color: rgb(0, 0, 0);
+    }
+
+    .img {
+        margin: 5px auto;
+        height: 250px;
+        width: 340px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .imp {
+        margin: 5px auto;
+        width: 80%;
+    }
+
+    footer {
+        background-color: rgb(96, 43, 112);
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    h2, h3 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(242, 214, 250);
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .controle-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }

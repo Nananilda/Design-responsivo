@@ -1,36 +1,102 @@
+/* corpo */
 body {
-    margin: 0;
+    margin: 0px;
+    background-color: rgb(232, 210, 232);
 }
 
-h2 {
-    font-family: "Chiller", cursive;
+/* navegação */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    font-size: 16px;
+    background-color: rgb(173, 60, 173);
 }
 
-.topo {
-    background-color: gray;
-    padding: 10px;
+nav p {
+    gap: 10px;
 }
 
-.menu a {
-    margin-right: 20px;
-    color: blue;
+nav h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: start; 
+    /* colocar no começo */
+    margin: 25px;
+    color: white;
 }
 
-.conteudo {
-    width: 1200px;
-    margin: auto;
+nav a.hover {
+    color: purple;
 }
 
-.noticia {
-    margin-top: 20px;
+nav a {
+    margin: 5px;
+    color: white;
 }
 
-.noticia img {
-    width: 800px;
+/* texto */
+p h3 {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.rodape {
-    margin-top: 30px;
-    background-color: gray;
-    padding: 20px;
+/* botão */
+button {
+    background-color: plum;
+    border-radius: 5px;
+    border: 0px;
+    margin: 5px;
+}
+
+/* quadro das notícias */
+div {
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0px 0px 0px 0px;
+}
+
+div h3 {
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 5px 5px 0px 5px;
+}
+
+div p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 0px 5px 0px 5px;
+}
+
+div a {
+    padding: 0px 50px 50px 5px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* rodapé */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: rgb(173, 60, 173);
+}
+
+/* imagem */
+img {
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px 20px 10px 5px;
+}
+
+#imagemCentro {
+    justify-content: center;
 }

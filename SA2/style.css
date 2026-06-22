@@ -17,15 +17,14 @@ nav p {
     gap: 10px;
 }
 
-nav h1{
+nav h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: start; 
-    /* colocar no começo */
+    text-align: start;
     margin: 25px;
     color: white;
 }
 
-nav a.hover {
+nav a:hover {
     color: purple;
 }
 
@@ -35,17 +34,10 @@ nav a {
 }
 
 /* texto */
-p h3 {
+h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* botão */
-button {
-    background-color: plum;
-    border-radius: 5px;
-    border: 0px;
-    margin: 5px;
-}
 
 /* quadro das notícias */
 div {
@@ -94,9 +86,124 @@ img {
     width: 90%;
     height: 200px;
     border-radius: 10px;
-    margin: 20px 20px 10px 5px;
+    margin: 10px 0px 10px 5px;
 }
 
 #imagemCentro {
     justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* contato */
+h2,
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#noticiaPrincipal {
+    max-width: 410px;
+    margin: 50px auto 100px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+input {
+    width: 400px;
+}
+
+textarea {
+    width: 400px;
+    height: auto;
+}
+
+/* botão */
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: plum;
+    border-radius: 5px;
+    border: 0px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* validação */
+.erro {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+.certo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+}
+
+/* ---------------- media queryes --------------- */
+
+/* celular */
+@media (max-width: 425px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    nav h1 {
+        margin: 15px 0px 10px 0px;
+        text-align: center;
+    }
+
+    section {
+        grid-template-columns: 1fr; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto;
+        margin: 10px 0px;
+    }
+
+    #imagemCentro {
+        border: none;
+        margin: 0;
+        padding: 0px 10px;
+    }
+
+    #noticiaPrincipal {
+        max-width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
+
+/* tablet */
+@media (min-width: 426px) and (max-width: 1023px) {
+    nav {
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #imagemCentro {
+        border: none;
+        margin: 0;
+    }
+}
+
+/* computador */
+@media (min-width: 1024px) {
+    section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #imagemCentro {
+        border: none;
+        margin: 0;
+    }
 }
